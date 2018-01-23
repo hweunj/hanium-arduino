@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/intro"
+    tools:context="org.androidtown.a3idiot_app.MainActivity">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:text="ⓒ 2016. 3-idiot all rights reserved. "
+        android:textSize="8sp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/stateText"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Press the button."
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="77dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/operBtn"
+        android:layout_alignStart="@+id/operBtn" />
+
+    <Button
+        android:id="@+id/operBtn"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_selector"
+        android:layout_above="@+id/stateText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/text_selector" />
+
+    <TextView
+        android:id="@+id/connecText"
+        android:text="Connect"
+        android:background="@drawable/bath_selector"
+        android:layout_marginBottom="32dp"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:layout_alignBottom="@+id/operBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_selector" />
+</RelativeLayout>
